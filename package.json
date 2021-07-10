@@ -1,7 +1,7 @@
 {
-  "name": "ng2-pdf-viewer",
-  "version": "7.0.1",
-  "description": "Angular 5+ component for rendering PDF",
+  "name": "ng2-pdf-viewer-csp-strict",
+  "version": "7.0.1-forked",
+  "description": "Angular component for rendering PDF with strict csp",
   "license": "MIT",
   "scripts": {
     "ng": "ng",
@@ -39,11 +39,11 @@
   },
   "homepage": "https://github.com/VadimDez/ng2-pdf-viewer#readme",
   "dependencies": {
-    "pdfjs-dist": "~2.7.570",
+    "pdfjs-dist": "^2.8.335",
     "tslib": "^2.0.0"
   },
   "peerDependencies": {
-    "pdfjs-dist": "~2.7.570"
+    "pdfjs-dist": "^2.8.335"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.1101.2",
@@ -83,6 +83,7 @@
   },
   "$schema": "./node_modules/ng-packagr/package.schema.json",
   "ngPackage": {
+    "assets": ["src/assets/styles/pdf-viewer.component.scss"],
     "lib": {
       "entryFile": "public_api.ts"
     },
